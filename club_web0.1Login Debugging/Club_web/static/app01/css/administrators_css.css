@@ -1,0 +1,116 @@
+* {
+    font-family: black;
+    /*font: ;*/
+    color: black;
+}
+
+body {
+    background-image: url('/static/app01/images/江船月夜.jpg');
+    background-size: cover;
+}
+
+.navigation-bar {
+    display: flex;
+    /* 弹性盒模型 */
+    margin-right: 10px;
+    /* 间距是10 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    border-bottom-left-radius: 0px;
+    /* 左下不是圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+
+}
+
+.navigation-bar-cell {
+    display: flex;
+    /* 弹性盒模型 */
+    margin-right: 10px;
+    /* 间距是10 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+}
+
+.left {
+    /* 半透明白色背景 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 圆角 */
+    border-radius: 10px;
+    /* 高度填满整个视口 */
+    height: 100vh;
+    /* 内边距 */
+    padding: 10px 20px;
+    /* 边框盒子模型 */
+    box-sizing: border-box;
+    /* 浮动布局 */
+    float: left;
+    /* 宽度 */
+    width: 159px;
+    border-top-left-radius: 0px;
+    /* 左上不是圆角 */
+    border-top-right-radius: 0px;
+}
+
+.left-cell {
+    display: block;
+    /* 块元素 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+    text-align: center;
+    /* 居中 */
+    margin-right: 5px;
+    /* 行间距 */
+
+}
+
+.content {
+    display: block;
+    /* 块元素 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+    text-align: center;
+    /* 居中 */
+    margin-bottom: 5px;
+    /* 行间距 */
+    align-items: center;
+}
+
+.content-cell {
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+}
+
+.content-cell-top {
+    font-size: 25px;
+    position: relative;
+
+}

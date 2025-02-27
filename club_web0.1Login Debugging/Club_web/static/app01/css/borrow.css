@@ -1,0 +1,142 @@
+body {
+    background-image: url('/static/app01/images/江船月夜.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.navigation-bar {
+    display: flex;
+    /* 弹性盒模型 */
+    margin-right: 10px;
+    /* 间距是10 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    border-bottom-left-radius: 10px;
+    /* 左下不是圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigation-bar-cell {
+    display: flex;
+    /* 弹性盒模型 */
+    margin-right: 10px;
+    /* 间距是10 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    margin-top: 75px;
+    margin-left: 85px;
+    width: 800px;
+    height: 850px;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    margin-top: 75px;
+    margin-left: 85px;
+    width: 800px;
+    height: 850px;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.already-borrow {
+    display: flex;
+flex-direction: row;
+background-color: #ff0000;
+font-size: 40px;
+justify-content: center;
+box-sizing: border-box;
+border-radius: 10px;
+flex-shrink: 0;
+}
+
+.ready-borrow {
+    display: flex;
+flex-direction: row;
+background-color: #66ff00;
+font-size: 40px;
+justify-content: center;
+box-sizing: border-box;
+border-radius: 10px;
+flex-shrink: 0;
+}
+
+.already-borrow-cell {
+    display: flex;
+    flex-direction: column; /* 改为纵向排列 */
+    align-items: center; /* 居中对齐 */
+    margin-top: 15px;
+    background-color: rgba(255, 0, 0, 0.25);
+    width: 750px;
+    height: 300px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    align-self: center;
+    border-radius: 10px;
+    padding: 10px; /* 添加内边距 */
+}
+.already-borrow-cell img {
+    max-width: 100%; /* 图片最大宽度为容器宽度 */
+    max-height: 80%; /* 图片最大高度为容器高度的80% */
+    object-fit: contain; /* 保持图片比例 */
+}
+
+.already-borrow-cell .description {
+    margin-top: 10px; /* 在图片和描述之间添加间距 */
+    text-align: center; /* 文字居中 */
+}
+
+.ready-borrow-cell {
+    display: flex;
+    flex-direction: column; /* 改为纵向排列 */
+    align-items: center; /* 居中对齐 */
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 750px;
+    height: 300px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    align-self: center;
+    border-radius: 10px;
+    padding: 10px; /* 添加内边距 */
+}
+.ready-borrow-cell img {
+    max-width: 100%; /* 图片最大宽度为容器宽度 */
+    max-height: 80%; /* 图片最大高度为容器高度的80% */
+    object-fit: contain; /* 保持图片比例 */
+}
+
+.ready-borrow-cell .description {
+    margin-top: 10px; /* 在图片和描述之间添加间距 */
+    text-align: center; /* 文字居中 */
+}

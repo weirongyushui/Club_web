@@ -1,0 +1,107 @@
+body {
+    background-image: url('/static/app01/images/江船月夜.jpg');
+    background-size: cover;
+}
+
+.navigation-bar {
+    display: flex;
+    /* 弹性盒模型 */
+    margin-right: 10px;
+    /* 间距是10 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    border-bottom-left-radius: 0px;
+    /* 左下不是圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+
+}
+
+.navigation-bar-cell {
+    display: flex;
+    /* 弹性盒模型 */
+    margin-right: 10px;
+    /* 间距是10 */
+    box-sizing: border-box;
+    /* 边框盒子 */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 半透明白色背景 */
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.show {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:repeat(2, 200px);
+    grid-template-areas: "a1 a1 a2 a3 a4"
+                          "a1 a1 a5 a6 a7";
+    box-sizing: border-box;
+}
+
+.big_pic {
+    grid-area: a1;
+}
+
+.big_pic_cell {
+    width: 700px;
+    height: auto;
+}
+
+.small1 {
+    grid-area: a2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.small2 {
+    grid-area: a3;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.small3 {
+    grid-area: a4;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.small4 {
+    grid-area: a5;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.small5 {
+    grid-area: a6;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.small6 {
+    grid-area: a7;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.small_pic_cell{
+    width: 300px;
+}

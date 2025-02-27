@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人页面</title>
+    <link type="text/css" rel="stylesheet" href="/static/app01/css/personal.css">
+
+</head>
+
+<body>
+    <div class="navigation-bar">
+        <div class="navigation-bar-cell"><a href="{% url 'index' %}"><img src="/static/app01/images/首页%20(1).png" alt="">&nbsp;首页</a></div>
+        <div class="navigation-bar-cell"><a href="{% url 'users' %}"><img src="/static/app01/images/我的.png" alt="">&nbsp;用户</a></div>
+        <div class="navigation-bar-cell"><a href=""><img src="/static/app01/images/编辑.png" alt="">&nbsp;设置</a></div>
+        <div class="navigation-bar-cell"><a href="{% url 'borrow' %}"><img src="/static/app01/images/进入.png" alt="">&nbsp;借阅</a></div>
+        <div class="navigation-bar-cell"><a target="_blank" href="http://47.94.172.187:8080/">AI</a></div>
+    </div>
+    <div class="all">
+        <div class="user">
+            <div class="profile-pic">
+                <img src="/static/app01/images/5.png" alt="头像" class="avatar">
+            </div>
+            <div class="text1">张三</div>
+            <div class="text2">欢迎使用科德计算机借阅系统</div>
+            <hr class="divider">
+            <div class="text1">生日：2077/6/9</div>
+            <div class="icon">
+                <img class="icon-cell" src="/static/app01/images/icon_weichat.png" alt="">
+                <img class="icon-cell" src="/static/app01/images/icon_QQ.png" alt="">
+                <img class="icon-cell" src="/static/app01/images/icon_email.png" alt="">
+            </div>
+            <hr class="divider">
+            <div class="text3">所在学院：</div>
+            <div class="text3">电话号码：</div>
+            <div class="text3">所在年级：</div>
+            <div class="text3">所在专业：</div>
+            <hr class="divider">
+            <button class="edit">编辑</button>
+        </div>
+        <div class="right">
+            <div class="borrowed">
+                <div class="borrowed-cell">
+                    <div class="right-content">
+                        <div class="borrowed-cell-already">您已借阅</div>
+                        <div class="border-thing">
+                            <img src="" alt="" class="thing">
+                            <div class="thing-cell">
+                                <div>物品名称：</div>
+                                <div>借阅日期:</div>
+                                <div>归还日期：</div>
+                                <button>我要归还</button>
+                            </div>
+                        </div>
+                        <div class="border-thing">
+                            <img src="" alt="" class="thing">
+                            <div class="thing-cell">
+                                <div>物品名称：</div>
+                                <div>借阅日期:</div>
+                                <div>归还日期：</div>
+                                <button>我要归还</button>
+                            </div>
+                        </div>
+                        <div class="border-thing">
+                            <img src="" alt="" class="thing">
+                            <div class="thing-cell">
+                                <div>物品名称：</div>
+                                <div>借阅日期:</div>
+                                <div>归还日期：</div>
+                                <button>我要归还</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="return">
+                <div class="return-cell">
+                    <div class="right-content">
+                        <div class="return-cell-should">您应归还</div>
+                        <div class="border-thing">
+                            <img src="" alt="" class="thing">
+                            <div class="thing-cell">
+                                <div>物品名称：</div>
+                                <div>借阅日期:</div>
+                                <div>归还日期：</div>
+                                <button>我要归还</button>
+                            </div>
+                        </div>
+                        <div class="border-thing">
+                            <img src="" alt="" class="thing">
+                            <div class="thing-cell">
+                                <div>物品名称：</div>
+                                <div>借阅日期:</div>
+                                <div>归还日期：</div>
+                                <button>我要归还</button>
+                            </div>
+                        </div>
+                        <div class="border-thing">
+                            <img src="" alt="" class="thing">
+                            <div class="thing-cell">
+                                <div>物品名称：</div>
+                                <div>借阅日期:</div>
+                                <div>归还日期：</div>
+                                <button>我要归还</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

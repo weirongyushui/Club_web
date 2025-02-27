@@ -1,0 +1,65 @@
+*{
+
+    font-size: 20px;
+}
+.main{
+    border: solid 1px;
+    width:500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex; /* 使用Flexbox */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    background-image: url('/static/app01/images/5.png');
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+.login{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+}
+.z-m{
+    width: auto;
+    margin: 0 auto;
+}
+.denglu{
+    width: 40px;
+    margin: 0 auto;
+}
+input[type="text"],input[type="password"]{
+    background-color:transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5); /* 设置边框为半透明黑色 */
+
+}
+.button{
+    margin: 0 auto;
+    margin-top: 20px; /* 在输入框下方添加一些间距 */
+    padding: 10px 20px; /* 按钮内边距 */
+    background-color: #007bff62; /* 按钮背景颜色 */
+    color: white; /* 文字颜色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标样式 */
+    font-size: 16px; /* 字体大小 */
+    display: block;
+}
+.button:hover{
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+.register-button {
+    position: absolute; /* 绝对定位 */
+    bottom: 10px; /* 距离底部10px */
+    right: 10px; /* 距离右侧10px */
+    padding: 10px 20px; /* 按钮内边距 */
+    background-color: #007bff00; /* 按钮背景颜色 */
+    color: white; /* 文字颜色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标样式 */
+    font-size: 16px; /* 字体大小 */
+}
+.register-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}

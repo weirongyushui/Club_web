@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <style>
+     .main{
+        border: solid 1px;
+        width:500px;
+        height: 500px;
+        margin: 0 auto;
+        display: flex; /* 使用Flexbox */
+        align-items: center; /* 垂直居中 */
+        justify-content: center; /* 水平居中 */
+        background-image: url(./photo/5.png);
+        background-size: cover;
+        background-position:center;
+        position: relative; /* 设置相对定位，以便绝对定位的元素可以相对于它定位 */
+    }
+    .login{
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+    }
+    .z-m{
+        width: auto;
+        margin: 0 auto;
+    }
+    .denglu{
+        width: 40px;
+        margin: 0 auto;
+    }
+    input[type="text"],input[type="password"]{
+        background-color:transparent;
+        border: 1px solid rgba(0, 0, 0, 0.5); /* 设置边框为半透明黑色 */
+    }
+    .character{
+        position: absolute; /* 设置绝对定位 */
+        width: 50px; /* 根据实际图片大小调整 */
+        height: 50px; /* 根据实际图片大小调整 */
+        bottom: 0; /* 定位到底部 */
+    }
+    .character1{
+        left: 0; /* 定位到左下角 */
+    }
+    .character2{
+        right: 0; /* 定位到右下角 */
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <p class="denglu">登录</p>
+            <div class="z-m">
+                <div class="z">
+                    <label>账号</label>
+                    <input type="text" placeholder="账户" >
+                </div>
+                <div>
+                    <label>密码</label>
+                    <input type="password" id="passwordInput" placeholder="密码">
+                </div>
+            </div>
+        </div>
+        <img src="./photo/15.png" class="character character1" alt="Character 1" data-focus-src="./photo/8.png">
+        <img src="./photo/8.png" class="character character2" alt="Character 2" data-focus-src="./photo/focus2.png">
+    </div>
+    <script>
+        // 获取密码输入框和角色图片元素
+        const passwordInput = document.getElementById('passwordInput');
+        const character1 = document.querySelector('.character1');
+        const character2 = document.querySelector('.character2');
+
+        // 切换图片的函数
+        function switchImages(isFocus) {
+            const focusSrc1 = character1.getAttribute('data-focus-src');
+            const focusSrc2 = character2.getAttribute('data-focus-src');
+            const defaultSrc1 = character1.src;
+            const defaultSrc2 = character2.src;
+
+            if (isFocus) {
+                character1.src = focusSrc1;
+                character2.src = focusSrc2;
+            } else {
+                character1.src = defaultSrc1;
+                character2.src = defaultSrc2;
+            }
+        }
+
+        // 监听密码输入框的点击事件
+        passwordInput.addEventListener('focus', () => {
+            switchImages(true);
+        });
+
+        // 监听密码输入框的失焦事件
+        passwordInput.addEventListener('blur', () => {
+            switchImages(false);
+        });
+    </script>
+</body>
+</html>

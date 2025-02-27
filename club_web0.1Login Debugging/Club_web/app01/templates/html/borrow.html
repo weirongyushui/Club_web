@@ -1,0 +1,379 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="/static/app01/css/borrow.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <div class="navigation-bar-cell"><a href="{% url 'index' %}"><img src="/static/app01/images/首页%20(1).png" alt="">&nbsp;首页</a></div>
+        <div class="navigation-bar-cell"><a href="{% url 'users' %}"><img src="/static/app01/images/我的.png"
+                                                                                                         alt="">&nbsp;用户</a></div>
+        <div class="navigation-bar-cell"><a href=""><img src="/static/app01/images/编辑.png" alt="">&nbsp;设置</a></div>
+        <div class="navigation-bar-cell"><a href="{% url 'borrow' %}"><img src="/static/app01/images/进入.png" alt="">&nbsp;借阅</a></div>
+        <div class="navigation-bar-cell"><a target="_blank" href="http://47.94.172.187:8080/">AI</a></div>
+    </div>
+    <div class="content"></div>
+    <div class="left">
+        <div class="already-borrow">已借阅</div>
+        <div class="already-borrow-cell">
+            <img src="/static/app01/images/" alt="">
+            <div>即将上线在线借阅</div>
+            <P>qwq</P>
+        </div>
+    </div>
+    <div class="right">
+        <div class="ready-borrow">可借阅</div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/行空板.jpg" alt="">
+            <div>行空板</div>
+            <P>ASDASDASDASA</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/行空板套装.jpg" alt="">
+            <div>行空板套件</div>
+            <P>ASDASDASDASA</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/小方舟.jpg" alt="">
+            <div>小方舟</div>
+            <P>ASDASDASDASA</P>
+        </div>
+
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/树莓派.jpg" alt="">
+            <div>树莓派微电脑</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/ai接控制板.jpg" alt="">
+            <div>ai接控制板</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/智教玲珑号.jpg" alt="">
+            <div>智教玲珑号</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/掌控版套装.jpg" alt="">
+            <div>掌控版套装</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/精通机器学习与算法.jpg" alt="">
+            <div>精通机器学习与算法</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《GPT时代：人类再腾飞》.jpg" alt="">
+            <div>《GPT时代：人类再腾飞》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《Python%20AI：机器学习·深度学习》.jpg" alt="">
+            <div>《Python AI：机器学习·深度学习》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《Python编程快速上手：让繁琐工作自动化%20第2版》.jpg" alt="">
+            <div>《Python编程快速上手：让繁琐工作自动化%20第2版》</div>
+            <P>ASDASDASDAS</P>
+        </div><div class="ready-borrow-cell">
+            <img src="/static/app01/images/《Python超入门：从基础入门到人工智能应用》.jpg" alt="">
+            <div>《Python超入门：从基础入门到人工智能应用》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《Python极客项目编程》.jpg" alt="">
+            <div>《Python极客项目编程》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《Python数据科学实战》.jpg" alt="">
+            <div>《Python数据科学实战》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《安全简史：从隐私保护到量子密码》.jpg" alt="">
+            <div></div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《编程江湖：Python篇》.jpg" alt="">
+            <div></div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《传感器与智能时代》.jpg" alt="">
+            <div>《传感器与智能时代》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《大话物联网（第2版）》.jpg" alt="">
+            <div>《大话物联网（第2版）》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《递归算法与项目实战：基于Python与JavaScript》.jpg" alt="">
+            <div>《递归算法与项目实战：基于Python与JavaScript》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《动手做AI%20Agent：大模型应用开发》.jpg" alt="">
+            <div>《动手做AIAgent：大模型应用开发》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《高等数学（上册·高教版）》.jpg" alt="">
+            <div>《高等数学（上册·高教版）》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《高等数学（下册·高教版）》.jpg" alt="">
+            <div>《高等数学（下册·高教版）》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《机器学习基础：建模与问题求解》.jpg" alt="">
+            <div>《机器学习基础：建模与问题求解》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《计算机科学之美》.jpg" alt="">
+            <div>《计算机科学之美》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《计算机是如何工作的：人人都能懂的计算机软硬件工作原理》.jpg" alt="">
+            <div>《计算机是如何工作的：人人都能懂的计算机软硬件工作原理》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《计算之魂：计算科学品位和认知进阶》.jpg" alt="">
+            <div>《计算之魂：计算科学品位和认知进阶》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《揭秘机器人》.jpg" alt="">
+            <div>《揭秘机器人》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《揭秘计算机》.jpg" alt="">
+            <div>《揭秘计算机》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《揭秘人工智能》.jpg" alt="">
+            <div>《揭秘人工智能》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《漫画线性代数：欧姆社学习漫画》.jpg" alt="">
+            <div>《漫画线性代数：欧姆社学习漫画》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《秘密数学+笔记：女孩的概率篇》.jpg" alt="">
+            <div>《秘密数学+笔记：女孩的概率篇》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《秘密数学+笔记：女孩的积分篇》.jpg" alt="">
+            <div>《秘密数学+笔记：女孩的积分篇》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《秘密数学+笔记：女孩的排列组合篇》.jpg" alt="">
+            <div>《秘密数学+笔记：女孩的排列组合篇》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《秘密数学+笔记：女孩的三角函数篇》.jpg" alt="">
+            <div>《秘密数学+笔记：女孩的三角函数篇》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/" alt="">
+            <div></div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《秘密数学+笔记：女孩的统计篇》.jpg" alt="">
+            <div></div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《秘密数学+笔记：女孩的微分篇》.jpg" alt="">
+            <div></div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《秘密数学+笔记：女孩的整数篇》.jpg" alt="">
+            <div>《秘密数学+笔记：女孩的整数篇》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《你的Python实践工具书：超实用全彩》.jpg" alt="">
+            <div>《你的Python实践工具书：超实用全彩》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《区块链%20人工智能%20数字货币：黑科技让生活更美好？》.jpg" alt="">
+            <div>《区块链 人工智能 数字货币：黑科技让生活更美好？》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《区块链：未来IT图解》.jpg" alt="">
+            <div>《区块链：未来IT图解》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《人工智能（第2版）》.jpg" alt="">
+            <div>《人工智能（第2版）》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《人工智能：未来IT图解》.jpg" alt="">
+            <div>《人工智能：未来IT图解》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《人工智能和深度学习导论》.jpg" alt="">
+            <div>《人工智能和深度学习导论》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《人工智能全能书：商业应用与技术发展》.jpg" alt="">
+            <div>《人工智能全能书：商业应用与技术发展》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《人工智能之路：从中世纪的机器人到现代神经网络》.jpg" alt="">
+            <div>《人工智能之路：从中世纪的机器人到现代神经网络》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《人人可懂的深度学习》.jpg" alt="">
+            <div>《人人可懂的深度学习》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《深度学习：未来IT图解》.jpg" alt="">
+            <div>《深度学习：未来IT图解》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《深度学习的数学：使用Python语言》.jpg" alt="">
+            <div>《深度学习的数学：使用Python语言》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《深入浅出深度学习：从逻辑运算到人工智能》.jpg" alt="">
+            <div>《深入浅出深度学习：从逻辑运算到人工智能》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《数据科学：未来已来》.jpg" alt="">
+            <div>《数据科学：未来已来》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《数学新体验：从自然数的加减乘除到熔化的点》.jpg" alt="">
+            <div>《数学新体验：从自然数的加减乘除到熔化的点》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《算法基础（卷1）》.jpg" alt="">
+            <div>《算法基础（卷1）》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《算法详解（卷2）：图算法和数据结构》.jpg" alt="">
+            <div>《算法详解（卷2）：图算法和数据结构》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《算法详解（卷3）：贪心算法和动态规划》.jpg" alt="">
+            <div>《算法详解（卷3）：贪心算法和动态规划》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《算法详解（卷4）：NP-Hard问题算法》.jpg" alt="">
+            <div>《算法详解（卷4）：NP-Hard问题算法》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《通用人工智能人才培养体系》.jpg" alt="">
+            <div>《通用人工智能人才培养体系》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《图解GPT：大模型是怎样构建的》.jpg" alt="">
+            <div>《图解GPT：大模型是怎样构建的》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+        <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《图解算法：轻松快速掌握实力派程序设计精华》.jpg" alt="">
+            <div>《图解算法：轻松快速掌握实力派程序设计精华》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《图解算法使用Python（第2版）》.jpg" alt="">
+            <div>《图解算法使用Python（第2版）》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《图说深度学习：用可视化方法理解复杂概念》.jpg" alt="">
+            <div>《图说深度学习：用可视化方法理解复杂概念》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《微积分的故事》.jpg" alt="">
+            <div>《微积分的故事》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《我的AI助手：ChatGPT日常应用指南》.jpg" alt="">
+            <div>《我的AI助手：ChatGPT日常应用指南》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《这就是ChatGPT》.jpg" alt="">
+            <div>《这就是ChatGPT》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/" alt="">
+            <div></div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《中国特色开源软硬件概要：面向普通高中信息技术学科教学》.jpg" alt="">
+            <div>《中国特色开源软硬件概要：面向普通高中信息技术学科教学》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/微积分之屠龙宝刀.jpg" alt="">
+            <div>微积分之屠龙宝刀</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/微积分之倚天宝剑.jpg" alt="">
+            <div>微积分之倚天宝剑</div>
+            <P>ASDASDASDAS</P>
+        </div>
+         <div class="ready-borrow-cell">
+            <img src="/static/app01/images/《优必选科技：人工智能&机器人产教融合综合解决方案》.jpg" alt="">
+            <div>《优必选科技：人工智能&机器人产教融合综合解决方案》</div>
+            <P>ASDASDASDAS</P>
+        </div>
+    </div>
+</body>
+
+</html>

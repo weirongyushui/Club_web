@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'app01/css/loginstyle.css' %}">
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <div class="denglu">
+                <h2>登录</h2>
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                <div class="z-m">
+                    <label for="username">账号:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                </div>
+                <div class="z-m">
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                </div>
+                <div class="z-m">
+                    <input type="submit" value="进入神奇的网站">
+                </div>
+            </form>
+            {% if error_message %}
+                <p style="color: red;">{{ error_message }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
